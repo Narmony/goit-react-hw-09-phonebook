@@ -1,0 +1,31 @@
+{
+  "files": {
+    "ContactsView.css": "/goit-react-hw-09-phonebook/static/css/ContactsView.b9648bee.chunk.css",
+    "ContactsView.js": "/goit-react-hw-09-phonebook/static/js/ContactsView.422491eb.chunk.js",
+    "ContactsView.js.map": "/goit-react-hw-09-phonebook/static/js/ContactsView.422491eb.chunk.js.map",
+    "HomeView.js": "/goit-react-hw-09-phonebook/static/js/HomeView.d31a223d.chunk.js",
+    "HomeView.js.map": "/goit-react-hw-09-phonebook/static/js/HomeView.d31a223d.chunk.js.map",
+    "LoginView.js": "/goit-react-hw-09-phonebook/static/js/LoginView.fa2aa6e3.chunk.js",
+    "LoginView.js.map": "/goit-react-hw-09-phonebook/static/js/LoginView.fa2aa6e3.chunk.js.map",
+    "RegisterView.js": "/goit-react-hw-09-phonebook/static/js/RegisterView.c76bca42.chunk.js",
+    "RegisterView.js.map": "/goit-react-hw-09-phonebook/static/js/RegisterView.c76bca42.chunk.js.map",
+    "main.css": "/goit-react-hw-09-phonebook/static/css/main.8849fe62.chunk.css",
+    "main.js": "/goit-react-hw-09-phonebook/static/js/main.ae1ba390.chunk.js",
+    "main.js.map": "/goit-react-hw-09-phonebook/static/js/main.ae1ba390.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-09-phonebook/static/js/runtime-main.2e084a87.js",
+    "runtime-main.js.map": "/goit-react-hw-09-phonebook/static/js/runtime-main.2e084a87.js.map",
+    "static/js/6.6245a25e.chunk.js": "/goit-react-hw-09-phonebook/static/js/6.6245a25e.chunk.js",
+    "static/js/6.6245a25e.chunk.js.map": "/goit-react-hw-09-phonebook/static/js/6.6245a25e.chunk.js.map",
+    "index.html": "/goit-react-hw-09-phonebook/index.html",
+    "static/css/ContactsView.b9648bee.chunk.css.map": "/goit-react-hw-09-phonebook/static/css/ContactsView.b9648bee.chunk.css.map",
+    "static/css/main.8849fe62.chunk.css.map": "/goit-react-hw-09-phonebook/static/css/main.8849fe62.chunk.css.map",
+    "static/js/6.6245a25e.chunk.js.LICENSE.txt": "/goit-react-hw-09-phonebook/static/js/6.6245a25e.chunk.js.LICENSE.txt",
+    "static/media/defaultAvatar.bfb337f9.png": "/goit-react-hw-09-phonebook/static/media/defaultAvatar.bfb337f9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e084a87.js",
+    "static/js/6.6245a25e.chunk.js",
+    "static/css/main.8849fe62.chunk.css",
+    "static/js/main.ae1ba390.chunk.js"
+  ]
+}
