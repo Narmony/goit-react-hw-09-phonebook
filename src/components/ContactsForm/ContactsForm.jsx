@@ -2,9 +2,10 @@
 // import { connect } from 'react-redux';
 // import PropTypes from 'prop-types';
 
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useState, useCallback } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import contactsOperations from '../../redux/contacts/contacts-operations';
+import contactsSelectors from '../../redux/contacts/contacts-selectors';
 import Button from 'react-bootstrap/Button';
 
 import { v4 as uuidv4 } from 'uuid';
@@ -17,17 +18,24 @@ export default function ContactsForm() {
     number: '',
   });
 
+  const contacts = useSelector(contactsSelectors.getAllContacts);
   const nameInputId = uuidv4();
   const numberInputId = uuidv4();
 
   const handleChange = e => {
     const { name, value } = e.currentTarget;
-    setUser({ ...user, [name]: value });
+    setUser(user => ({ ...user, [name]: value }));
   };
 
   const handleSubmit = e => {
     e.preventDefault();
+    if (contacts.some(contact => contact.name === user.name)) {
+      alert(`${user.name} is already in contacts`);
+      reset();
+      return;
+    }
     dispatch(contactsOperations.addContact(user));
+
     reset();
   };
 

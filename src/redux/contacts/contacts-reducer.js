@@ -13,18 +13,18 @@ import {
   fetchContactsError,
 } from './contacts-actions';
 
-const checkName = (state, { payload }) => {
-  const checkedName = state.map(contact => contact.name).includes(payload.name);
-  if (checkedName) {
-    alert(`${payload.name} is already in contacts`);
-    return;
-  }
-  return [...state, payload];
-};
+// const checkName = (state, { payload }) => {
+//   const checkedName = state.map(contact => contact.name).includes(payload.name);
+//   if (checkedName) {
+//     alert(`${payload.name} is already in contacts`);
+//     return;
+//   }
+//   return [...state, payload];
+// };
 
 const contacts = createReducer([], {
   [fetchContactsSuccess]: (state, { payload }) => payload,
-  [addContactSuccess]: (state, { payload }) => checkName(state, { payload }),
+  [addContactSuccess]: (state, { payload }) => [...state, payload],
   [deleteContactSuccess]: (state, { payload }) =>
     state.filter(({ id }) => id !== payload),
 });
